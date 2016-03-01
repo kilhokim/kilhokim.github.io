@@ -18,20 +18,6 @@
 
 
 
-
-  <!-- Using MathJax, with the delimiters $ -->
-  <!-- Conflict with pygments for the .mo and .mi -->
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-    "HTML-CSS": {
-    styles: {
-    ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
-    },
-    tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
-    });
-  </script>
-
-  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
   </head>
 
   <body>
@@ -101,9 +87,9 @@ styles, `#sidebar-checkbox` for behavior. -->
 <p>우리가 만들어내고자 하는 '주어진 이미지가 나무인지 아닌지 구별하는 컴퓨터'의 경우에도, 이를 하나의 함수로 보아 단순화시키면, 입력 변숫값이 이미지이고 출력 변숫값이 {'나무', '비(非) 나무'} 중 하나인 함수라고 할 수 있다.</p>
 <p><img alt="나무 여부 분류 함수" src="./what-is-machine-learning_image-to-isTree-classifier.png" /></p>
 <p>사실 러닝 모델이 될 수 있는 함수의 형태는 매우 다양한데, 그 중 이해를 돕기 위해 이런 걸 하나 생각해보자:</p>
-<p>\$y = w_0 + w_1x_1 + w_2x_2\$</p>
-<p>위 함수는 입력 변수가 x_1, x_2이며, 출력 변수가 y인 함수이다(여러분들 중에서는 아마도 입력 변수가 이렇게 2개 이상으로 증가하면 극심한 두통이 찾아오는 분들이 계실 것인데, 그러한 분들은 지금이 가장 힘든 순간이 될 것이니 약간의 양해를 부탁드린다). 여러분의 이해를 도우면서 위에서 계속 가져왔던 '나무 여부를 구별하는 컴퓨터'의 사례를 계속 끌고나가기 위해, 지금부터 과격한 가정을 하나 해 보도록 하겠다.</p>
-<p>주어진 이미지를 수평 방향으로 반으로 갈라, 윗쪽 절반의 정 가운데에 해당하는 픽셀(pixel, 이미지 상에서의 하나의 점)을 선택한다. 우리가 정한 모종의 규칙에 의거하여, 이 점이 '녹색을 띠는 정도'를 0~255 사이의 숫자로 척도화시켰다고 가정하고, 그 값을 입력 변수 x_1에 대입한다. 마찬가지로, 아랫쪽 절반의 정 가운데에 해당하는 픽셀을 선택한 뒤, 이 점이 '갈색을 띠는 정도'를 0~255 사이의 숫자로 척도화시켰다고 가정하고, 그 값을 입력 변수 x_2에 대입한다. 한편, 초기 상태에서의 w_0, w_1, w_2의 값을 대충 0.001 정도로 설정한다. 이렇게 하면, 입력되는 이미지에 따라서 w_0 + w_1x_1 + w_2x_2가 계산되고, 그 값이 y에 대입된다. 그리고, 계산된 y값이 0보다 크거나 같으면 이미지를 '나무'로 판정하고, 0보다 작으면 이미지를 '비(非) 나무'로 판정한다고 하자. </p>
+<p><span class="math">\(y=w_0+w_1x_1+w_2x_2\)</span></p>
+<p>위 함수는 입력 변수가 <span class="math">\(x_1\)</span>, <span class="math">\(x_2\)</span>이며, 출력 변수가 <span class="math">\(y\)</span>인 함수이다(여러분들 중에서는 아마도 입력 변수가 이렇게 2개 이상으로 증가하면 극심한 두통이 찾아오는 분들이 계실 것인데, 그러한 분들은 지금이 가장 힘든 순간이 될 것이니 약간의 양해를 부탁드린다). 여러분의 이해를 도우면서 위에서 계속 가져왔던 '나무 여부를 구별하는 컴퓨터'의 사례를 계속 끌고나가기 위해, 지금부터 과격한 가정을 하나 해 보도록 하겠다.</p>
+<p>주어진 이미지를 수평 방향으로 반으로 갈라, 윗쪽 절반의 정 가운데에 해당하는 픽셀(pixel, 이미지 상에서의 하나의 점)을 선택한다. 우리가 정한 모종의 규칙에 의거하여, 이 점이 '녹색을 띠는 정도'를 0~255 사이의 숫자로 척도화시켰다고 가정하고, 그 값을 입력 변수 <span class="math">\(x_1\)</span>에 대입한다. 마찬가지로, 아랫쪽 절반의 정 가운데에 해당하는 픽셀을 선택한 뒤, 이 점이 '갈색을 띠는 정도'를 0~255 사이의 숫자로 척도화시켰다고 가정하고, 그 값을 입력 변수 <span class="math">\(x_2\)</span>에 대입한다. 한편, 초기 상태에서의 <span class="math">\(w_0\)</span>, <span class="math">\(w_1\)</span>, <span class="math">\(w_2\)</span>의 값을 대충 0.001 정도로 설정한다. 이렇게 하면, 입력되는 이미지에 따라서 <span class="math">\(w_0 + w_1x_1 + w_2x_2\)</span>가 계산되고, 그 값이 <span class="math">\(y\)</span>에 대입된다. 그리고, 계산된 <span class="math">\(y\)</span>값이 0보다 크거나 같으면 이미지를 '나무'로 판정하고, 0보다 작으면 이미지를 '비(非) 나무'로 판정한다고 하자.</p>
 <p><img alt="" src="./what-is-machine-learning_isTree-classifier-features.png" /></p>
 <p>유아가 수많은 나무 샘플을 받아들이면서 뇌 속에서 나무의 특질을 서서히 잡아나가듯이, 머신러닝의 경우에도 학습하는 컴퓨터로 하여금  </p>
 <p>http://cs.stanford.edu/people/karpathy/ilsvrc/</p>
@@ -175,6 +161,65 @@ styles, `#sidebar-checkbox` for behavior. -->
     }
 }
 </pre></div>
+
+
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' && location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
   </div>
 </div>
       </div>

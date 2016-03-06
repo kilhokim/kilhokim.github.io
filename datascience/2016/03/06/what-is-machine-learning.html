@@ -336,7 +336,7 @@ styles, `#sidebar-checkbox` for behavior. -->
 <div class="math">$$f(x_1,x_2,x_3)=w_0+w_1x_1+w_2x_2+w_3x_3$$</div>
 <p>그런데, 조금만 생각해보면 위에서 새로 정의한 요인들은 설령 입력 변수의 갯수를 줄여줄 지언정, 원래의 목표인 '나무 여부 구별' 측면에서 생각해보면 쓰레기 값에 가깝다. 전체 이미지를 지배하는 평균 색상이 무엇인지를 구했을 뿐 평균을 구하는 과정에서 이미지 상의 '어느 지점의 색상이 무엇인지'의 정보가 다 사라져버렸는데, 이걸 어디다 쓴단 말인가? 사람조차도 이 정보만으로는 나무 여부를 구별할 수가 없다.</p>
 <p><img alt="나무 이미지 전체의 평균 색상" src="../../../../images/what-is-machine-learning/isTree-classifier-failed-features.png" /></p>
-<p>나무 이미지 전체의 평균 색상</p>
+<p><center><em>나무 이미지 전체의 평균 색상</em></center></p>
 <p>그것보다, 이런 요인은 어떨까? 주어진 이미지를 수평 방향으로 반으로 갈라, 윗쪽 절반의 정중앙에 해당하는 픽셀을 선택하여 해당 픽셀의 [R, G, B] 값과, 아랫쪽 절반의 정중앙 픽셀을 선택하여 해당 픽셀의 [R, G, B] 값을 각각 요인으로 정의하는 것이다. 즉, '윗쪽 절반 중앙의 {R, G, B}값', '아랫쪽 절반 중앙의 {R, G, B}값'으로 총 6개의 요인을 정의할 수 있다. 데이터는 아마 이런 식일 것이다.</p>
 <table>
 <thead>
@@ -384,7 +384,7 @@ styles, `#sidebar-checkbox` for behavior. -->
 <p>향후 글에서는, 머신러닝의 다양한 세부 주제와 더불어서 머신러닝의 다양한 적용 사례에 대해 집중적으로 알아보고자 한다.</p>
 <h2>Reference</h2>
 <ul>
-<li><a href="https://work.caltech.edu/telecourse.html">Abu-Mostafa, Magdon-Ismail, Lin, \&lt;Learning from Data></a></li>
+<li><a href="https://work.caltech.edu/telecourse.html">Abu-Mostafa, Magdon-Ismail, Lin, &lt;Learning from Data></a></li>
 <li><a href="http://whatspshat.org/2015/10/08/tree-i-and-tree-ii-bereshit/">나무의 전형적인 예시 사진</a></li>
 <li><a href="http://krdic.naver.com/detail.nhn?docid=6621300">나무[나무]의 정의</a></li>
 <li><a href="https://www.google.co.kr/search?q=tree&amp;newwindow=1&amp;biw=798&amp;bih=675&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=0ahUKEwjgr5r7navLAhXMmZQKHRhfB4AQ_AUIBigB#">'나무' vs '나무X' 데이터 - 샘플과 레이블의 나열</a></li>

@@ -9,11 +9,11 @@
     <title>머신러닝이란 무엇인가? - Kilho Kim's blog</title>
 
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="/theme/css/poole.css"/>
-    <link rel="stylesheet" href="/theme/css/syntax.css"/>
-    <link rel="stylesheet" href="/theme/css/lanyon.css"/>
+    <link rel="stylesheet" href="../../../../theme/css/poole.css"/>
+    <link rel="stylesheet" href="../../../../theme/css/syntax.css"/>
+    <link rel="stylesheet" href="../../../../theme/css/lanyon.css"/>
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
-    <link rel="stylesheet" href="/theme/css/styles.css"/>
+    <link rel="stylesheet" href="../../../../theme/css/styles.css"/>
 
 
 
@@ -30,7 +30,7 @@ styles, `#sidebar-checkbox` for behavior. -->
 <div class="sidebar" id="sidebar">
   <div class="sidebar-item">
     <div class="profile">
-      <img src="/theme/img/profile-resize.jpg"/>
+      <img src="../../../../theme/img/profile-resize.jpg"/>
     </div>
   </div>
 
@@ -45,7 +45,7 @@ styles, `#sidebar-checkbox` for behavior. -->
       <div class="masthead">
         <div class="container">
           <h3 class="masthead-title">
-            <a href="/" title="Home">Kilho Kim's blog</a>
+            <a href="../../../../" title="Home">Kilho Kim's blog</a>
           </h3>
         </div>
       </div>
@@ -70,12 +70,12 @@ styles, `#sidebar-checkbox` for behavior. -->
 <h3>유년 시절 단어 학습의 기억</h3>
 <p>뜬금없겠지만, 이 시점에서 여러분의 기억을 유아기 시절로 되돌려보자. 여러분은 처음 단어를 통해 어느 대상의 개념을 익힐 때를 기억하는가? 예를 들어 '나무'라는 대상의 뜻을 익히는 상황을 생각해보자. 유아기 시절의 여러분은 아마도 엄빠가 사준 단어 그림책을 붙들고 대략 아래와 같은 그림을 가리키면서 '나무'라고 익혔을 것이다.</p>
 <p><img alt="나무의 전형적인 예시 사진" src="http://cdn.v-harness.com/wp-content/uploads/2015/03/tree.png" /></p>
-<p><em>나무의 전형적인 예시 사진</em></p>
+<p><center><em>나무의 전형적인 예시 사진</em></center></p>
 <p>위 그림은 '나무'를 나타내는 전형적인 예시 그림이다. 그런데, 실제로는 모든 나무가 위 그림처럼 생긴 건 아니다. 나무도 그 종이 매우 다양하며, 동종의 나무라고 하더라도 자라온 환경에 따라 그 모양이 당연히 다를 수 있다. 따라서, 엄밀히 말하자면, 위 그림은 실제 '나무'라는 개념을 완전히 온전하게 설명해주진 못하며, '나무'라는 실체에 대하여 간접적으로 접근하여 관찰한 하나의 사례, 즉 '<strong>샘플(sample)</strong>'에 불과하다.</p>
 <p>그래서 유아기의 여러분은, 엄빠 손을 붙잡고 밖으로 나와 실제로 존재하는 다양한 나무들을 관찰함으로써 '나무'의 다양한 샘플들을 더 많이 접하게 된다. 이 과정에서, 여러분의 뇌에서는 맨 처음 봤던 나무의 예시인 '갈색의 딱딱하고 커다란 무언가가 하나 있고, 그 윗쪽으로 좀 더 얇은 무언가가 여러 개 뻗어있으며 각 가지에는 자잘하고 아주 얇은 녹색의 무언가가 여러 개 매달려 있는 대상'만이 존재하였던 상태에서, 나무의 샘플을 <em>확장적으로 받아들이면서</em> 동시에 '나무'라는 대상의 핵심이 되는 특질을 서서히 <em>압축해 나가게</em> 된다. 나무의 핵심 특질이 압축된 결과물이 여러분의 뇌 속에서 아주 추상적인 형태로 자리잡아 나가는 것이다.</p>
 <h3>샘플에 기반한 학습의 필요성</h3>
 <p>지식의 통용을 위해, 나무를 다년간 연구해 온 사람들은 이를 다음과 같이 언어적으로 <em>정의</em>하였다.</p>
-<p><em>나무[나무]</em></p>
+<h5>나무[나무]</h5>
 <ol>
 <li><strong>줄기나 가지가 목질로 된 여러해살이 식물.</strong></li>
 <li>집을 짓거나 가구, 그릇 따위를 만들 때 재료로 사용하는 재목.</li>
@@ -90,8 +90,8 @@ styles, `#sidebar-checkbox` for behavior. -->
 <h4>예시1: 나무 여부 구별 기계</h4>
 <p>먼저, 유아를 학습시키기 위해 수많은 샘플이 필요했듯이, 기계를 학습시키기 위해서도 수많은 샘플이 필요하다. 어느 컴퓨터로 하여금 매번 랜덤한 대상이 포함된 이미지(image)를 던져줬을 때, 그것이 '나무인지 아닌지'를 구별할 수 있도록 학습을 시키고자 한다고 가정해보자. 유아기 때 여러분들이 수많은 나무 샘플들을 눈으로 관찰했듯이, 기계로 하여금 학습을 하도록 하려면 대단히 많은 수의 나무 이미지를 제시해줘야 한다. 머신러닝에서는 이러한 수많은 샘플들의 집합을 '<strong>데이터(data)</strong>'라고 부른다.</p>
 <p>이 때 중요한 것은, 기계로 하여금 어느 대상의 이미지를 주고 그것이 나무인지 아닌지 구별하도록 하기 위해서는, 나무 이미지뿐만 아니라 나무가 아닌 이미지도 충분히 많이 제시해줘야 한다. 따라서 실제로는 어느 랜덤한 이미지를 주고 {'나무', '나무X'} 중 하나의 표식을 붙여 그것의 정체를 나타내도록 하는데, 이를 '<strong>레이블(label)</strong>'이라고 한다. 다시 말해, 머신러닝에서는 수많은 (샘플, 레이블) 쌍의 집합이 한 덩어리의 데이터가 되어 기계로 전달된다.</p>
-<p><img alt="'나무' vs '나무X' 데이터 - 샘플과 레이블" src="{filename}/images/{slug}/treelike-things-with-labels.png" /></p>
-<p><em>'나무' vs '나무X' 데이터 - 샘플과 레이블의 나열</em></p>
+<p><img alt="'나무' vs '나무X' 데이터 - 샘플과 레이블" src="../../../../images/what-is-machine-learning/treelike-things-with-labels.png" /></p>
+<p><center><em>'나무' vs '나무X' 데이터 - 샘플과 레이블의 나열</em></center></p>
 <h4>예시2: 3개월 내 채무 이행 여부 예측 기계</h4>
 <p>머신러닝은, 앞선 예시1에서의 '이미지를 보고 나무인지 아닌지 구별하는' 것처럼 사람이 쉽게 할 수 있는 작업을 기계로 하여금 할 수 있도록 하는 데 적용된다. 그런데, 어떤 수치화된 데이터에 대한 분석을 통해 최적의 의사결정을 내리는 것과 같이, 사람이 쉽고 빠르게 할 수 없는 작업에 대해서도 머신러닝이 적용될 수 있다. 사실, 기계 입장에서는 이런 작업을 학습하는 것이 더 쉽다!</p>
 <p>이렇게 데이터에 기반한 의사결정과 관련된 다른 예시를 하나 생각해보자. 고객의 등골을 쪽쪽 빨아먹기로 악명 높은 대부업체인 '빨대론'에서는 수천명의 고객을 보유하고 있는데, 이들의 데이터를 바탕으로 하여 채무 이행 기한이 임박한 이들이 3개월 내에 채무를 이행할지/불이행할지 여부를 맞추고자 한다. 머신러닝을 응용한 다년간의 연구 끝에 빨대론에서는 고객의 '나이'와 '연봉'정보만을 사용하여 해당 고객이 3개월 내로 채무를 이행할지 여부를 매우 높은 정확도로 예측하는 컴퓨터를 학습시키는 데 성공하였다(기가 차겠지만, 문제의 단순화를 위해 일단 그렇다고 치자).</p>
@@ -100,256 +100,280 @@ styles, `#sidebar-checkbox` for behavior. -->
 <table>
 <thead>
 <tr>
-<th align="center">번호</th>
-<th align="center">나이</th>
-<th align="center">연봉(백만원)</th>
-<th align="center">이행여부</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="center">1</td>
-<td align="center">29</td>
-<td align="center">56</td>
-<td align="center">O</td>
+<td><strong>번호</strong></td>
+<td><strong>나이</strong></td>
+<td><strong>연봉(백만원)</strong></td>
+<td><strong>이행여부</strong></td>
 </tr>
 <tr>
-<td align="center">2</td>
-<td align="center">64</td>
-<td align="center">89</td>
-<td align="center">O</td>
+<td>1</td>
+<td>29</td>
+<td>56</td>
+<td>O</td>
 </tr>
 <tr>
-<td align="center">3</td>
-<td align="center">33</td>
-<td align="center">17</td>
-<td align="center">X</td>
+<td>2</td>
+<td>64</td>
+<td>89</td>
+<td>O</td>
 </tr>
 <tr>
-<td align="center">4</td>
-<td align="center">45</td>
-<td align="center">94</td>
-<td align="center">O</td>
+<td>3</td>
+<td>33</td>
+<td>17</td>
+<td>X</td>
 </tr>
 <tr>
-<td align="center">5</td>
-<td align="center">24</td>
-<td align="center">26</td>
-<td align="center">X</td>
+<td>4</td>
+<td>45</td>
+<td>94</td>
+<td>O</td>
 </tr>
 <tr>
-<td align="center">6</td>
-<td align="center">55</td>
-<td align="center">24</td>
-<td align="center">X</td>
+<td>5</td>
+<td>24</td>
+<td>26</td>
+<td>X</td>
 </tr>
 <tr>
-<td align="center">7</td>
-<td align="center">35</td>
-<td align="center">52</td>
-<td align="center">O</td>
+<td>6</td>
+<td>55</td>
+<td>24</td>
+<td>X</td>
 </tr>
 <tr>
-<td align="center">8</td>
-<td align="center">57</td>
-<td align="center">65</td>
-<td align="center">O</td>
+<td>7</td>
+<td>35</td>
+<td>52</td>
+<td>O</td>
 </tr>
 <tr>
-<td align="center">9</td>
-<td align="center">45</td>
-<td align="center">32</td>
-<td align="center">X</td>
+<td>8</td>
+<td>57</td>
+<td>65</td>
+<td>O</td>
 </tr>
 <tr>
-<td align="center">10</td>
-<td align="center">52</td>
-<td align="center">75</td>
-<td align="center">O</td>
+<td>9</td>
+<td>45</td>
+<td>32</td>
+<td>X</td>
 </tr>
 <tr>
-<td align="center">11</td>
-<td align="center">62</td>
-<td align="center">31</td>
-<td align="center">X</td>
+<td>10</td>
+<td>52</td>
+<td>75</td>
+<td>O</td>
+</tr>
+<tr>
+<td>11</td>
+<td>62</td>
+<td>31</td>
+<td>X</td>
 </tr>
 </tbody>
 </table>
-<p><em>빨대론의 11명 고객 데이터</em></p>
+<p><center><em>빨대론의 11명 고객 데이터</em></center></p>
 <p>한편, 레이블이 붙어있지 않은 샘플들을 대상으로 학습을 수행하는 경우도 있는데, 이는 나중에 살펴보도록 하겠다.</p>
 <h3>러닝 모델</h3>
 <p>다음으로 중요한 것이 유아로 따지면 '뇌'에 해당하는 것인데, 머신러닝에서는 이를 '<strong>러닝 모델(learning model)</strong>'이라고 한다. 러닝 모델은, 아주 간단히 말해서 하나의 커다란 함수로 구성되어 있다고 보면 된다. 여러분이 학창 시절 지식을 떠올려 보면, 대략 함수는 어떤 주어진 입력 변수에 대하여 특정한 연산을 수행한 결과를 출력 변수로 내뱉는 장치라고 배웠을 것이다.</p>
 <p><img alt="함수의 모식도" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Function_machine2.svg/750px-Function_machine2.svg.png" /></p>
-<p><em>함수의 모식도</em></p>
+<p><center><em>함수의 모식도</em></center></p>
 <p>우리가 만들어내고자 하는 '나무 여부 구별 기계'의 경우에도, 이를 하나의 함수로 보아 단순화시키면, 입력 변숫값이 이미지이고 출력 변숫값이 {'나무', '나무X'} 중 하나인 함수라고 할 수 있다.</p>
-<p><img alt="나무인지 아닌지 구별하는 함수" src="{filename}/images/{slug}/image-to-istree-classifier.png" /></p>
-<p><em>나무인지 아닌지 구별하는 함수</em></p>
+<p><img alt="나무인지 아닌지 구별하는 함수" src="../../../../images/what-is-machine-learning/image-to-istree-classifier.png" /></p>
+<p><center><em>나무인지 아닌지 구별하는 함수</em></center></p>
 <p>한편 '3개월 내 채무 이행여부 예측 기계'의 경우, 입력 변숫값이 신규 고객의 '나이'와 '연봉'이고, 출력 변숫값이 {'이행', '이행X'} 중 하나인 함수라고 할 수 있다. 예를 들어 오늘 막 대출한 신규 고객 '김호구'씨가 있는데, 이 사람의 나이가 40세이고 연봉이 40백만원(=4천만원)일 때 향후 3개월 내로 채무를 이행할지 여부를 맞추는 것이다.</p>
-<p><img alt="채무 이행여부 예측 함수" src="{filename}/images/{slug}/customer-data-to-fulfillment-classifier.png" /></p>
-<p><em>채무 이행여부 예측 함수</em></p>
+<p><img alt="채무 이행여부 예측 함수" src="../../../../images/what-is-machine-learning/customer-data-to-fulfillment-classifier.png" /></p>
+<p><center><em>채무 이행여부 예측 함수</em></center></p>
 <p><code>러닝 모델에 대해 이 이상으로 더 설명하려면, 좀 더 수학적인 설명이 필요하다. 수학 울렁증을 가진 분들을 위해, 이 지점에서 미리 양해를 구한다.</code></p>
 <p>그럼 러닝 모델은 구체적으로 어떻게 생겼으며, 어떻게 학습되는 것일까? 앞선 두 개의 예시를 붙들고 좀 더 자세히 접근해보도록 하자.</p>
 <h4>예시2: 3개월 내 채무 이행 여부 예측 기계</h4>
 <p>앞서 빨대론의 11명 고객 데이터를 표로 나타내었는데, 표는 한 눈에 들어오지 않으므로 이를 그래프 상에 찍어보도록 하자. 표기의 편의 상 나이를 <span class="math">\(x_1\)</span>, 연봉을 <span class="math">\(x_2\)</span>로 하고, 고객이 채무를 이행한 경우 해당 고객의 (<span class="math">\(x_1\)</span>, <span class="math">\(x_2\)</span>) 좌표에 'O', 그렇지 않으면 'X'로 표기하도록 하자. 그럼 아래와 같을 것이다.</p>
-<p><img alt="X1-X2 그래프" src="{filename}/images/{slug}/age-to-salary-plot.png" /></p>
-<p><em>X1 - X2 그래프</em></p>
+<p><img alt="X1-X2 그래프" src="../../../../images/what-is-machine-learning/age-to-salary-plot.png" /></p>
+<p><center><em>X1 - X2 그래프</em></center></p>
 <p>데이터 내의 각 (샘플, 레이블)을 그래프 상에 나타내니 문제가 좀 더 직관적으로 되었다. 빨대론의 목표는 현재 대출한 모 고객의 나이와 연봉만을 알고 있을 때, 이 고객이 3개월 내로 채무를 이행할지 여부를 맞추는 것이다. 다시 말하면, 어느 새로운 샘플의 <span class="math">\(x_1\)</span>과 <span class="math">\(x_2\)</span>의 값만을 알 때, 그래프 상에 떨군 점 (<span class="math">\(x_1\)</span>, <span class="math">\(x_2\)</span>)이 'O'가 될지 'X'가 될지 맞추는 것이다. 한 번 더 생각하면, 그래프 상에서 'O'가 모여있는 영역과 'X'가 모여있는 영역의 명확한 '경계'를 찾으면 될 것 같다는 생각이 든다.</p>
 <h5>선형 모델</h5>
 <p>위 그래프를 보면, 'O'의 집단과 'X'의 집단 사이에 대충 <strong>직선</strong>을 하나 그으면 될 것 같다는 생각이 든다. <em>이 단계에서의 발견은 처음에 러닝 모델로 사용할 수 있는 함수를 결정하는 데 있어서 아주 중요하다.</em> 방금 직선을 그으면 된다고 했는데, 이런 함수를 생각해보자.</p>
-<p><span class="math">\(f(x_1,x_2)=w_0+w_1x_1+w_2x_2\)</span></p>
+<div class="math">$$f(x_1,x_2)=w_0+w_1x_1+w_2x_2$$</div>
 <p>위 함수는 입력 변수가 <span class="math">\(x_1\)</span>, <span class="math">\(x_2\)</span>이며, 계수가 각각 <span class="math">\(w_1\)</span>, <span class="math">\(w_2\)</span>, 상수항이 <span class="math">\(w_0\)</span>에 해당하는 함수이다(여러분들 중에서는 아마도 입력 변수가 이렇게 2개 이상으로 증가하면 극심한 두통이 찾아오는 분들이 계실 것인데, 그러한 분들은 지금이 가장 힘든 순간이 될 것이니 약간의 양해를 부탁드린다). 이게 직선과 무슨 관련이 있나 궁금해하는 분들이 계실텐데, 이렇게 하면 <span class="math">\(x_1\)</span> - <span class="math">\(x_2\)</span> 평면 상에서의 직선이 된다.</p>
-<p><span class="math">\(w_0+w_1x_1+w_2x_2=0\)</span></p>
+<div class="math">$$w_0+w_1x_1+w_2x_2=0$$</div>
 <p>이렇게 직선(혹은 평면)의 형태로 정의되는 러닝 모델은 특별히 <strong>선형 모델(linear model)</strong>이라고 부르며, 가장 단순한 러닝 모델에 해당한다. 선형 모델을 사용하기로 결정하였으므로, 이제 이 직선의 위치와 기울기를 잘 조정하여 직선의 윗쪽에는 'O' 집단이, 직선의 아랫쪽에는 'X' 집단이 위치하도록 분류할 수 있어야 한다. 그 말인즉슨, 위 함수에서 <span class="math">\(w_0\)</span>, <span class="math">\(w_1\)</span>, <span class="math">\(w_2\)</span>를 잘 찾아야 하는 것이다.</p>
 <p>이를 위해서, 먼저 <span class="math">\(w_0\)</span>, <span class="math">\(w_1\)</span>, <span class="math">\(w_2\)</span>의 초깃값을 대충 적절하게 잡는다. 예를 들어, <span class="math">\(w_0=80\)</span>, <span class="math">\(w_1=-3\)</span>, <span class="math">\(w_2=1\)</span>로 잡았다고 하자. 이 직선을 그래프 상에 나타내면 다음과 같다.</p>
-<p><img alt="X1-X2 그래프와 초기 선형 모델" src="{filename}/images/{slug}/age-to-salary-with-initialized-model-plot.png" /></p>
-<p><em>X1 - X2 그래프와 초기 선형 모델</em></p>
+<p><img alt="X1-X2 그래프와 초기 선형 모델" src="../../../../images/what-is-machine-learning/age-to-salary-with-initialized-model-plot.png" /></p>
+<p><center><em>X1 - X2 그래프와 초기 선형 모델</em></center></p>
 <p>그런 다음 각 샘플을 돌아가면서 관찰하여, 해당 샘플이 직선에 의해 제대로 분류되었는지 살펴본다. 읭? 그래프에 표시된 바와 같이, 'O'인데도 직선 아랫쪽으로, 'X'인데도 직선 윗쪽으로 잘못 위치한 샘플들이 4개 있다. 이들 샘플들을 제대로 분류하려면, 직선의 기울기를 낮춰야 할 것 같다. 러님 모델은, 사전에 정의한 모종의 <strong>러닝 알고리즘(learning algorithm)</strong>에 의거하여 <span class="math">\(w_0\)</span>, <span class="math">\(w_1\)</span>, <span class="math">\(w_2\)</span>의 값을 적절하게 조정, 잘못 분류된 샘플이 제대로 분류되도록 한다.</p>
-<p><img alt="X-X2 그래프와 개선된 선형 모델" src="{filename}/images/{slug}/age-to-salary-with-improved-model-plot.png" /></p>
-<p><em>X1 - X2 그래프와 개선된 선형 모델</em></p>
+<p><img alt="X-X2 그래프와 개선된 선형 모델" src="../../../../images/what-is-machine-learning/age-to-salary-with-improved-model-plot.png" /></p>
+<p><center><em>X1 - X2 그래프와 개선된 선형 모델</em></center></p>
 <p><span class="math">\(w_0=40\)</span>, <span class="math">\(w_1=-3\)</span>, <span class="math">\(w_2=2\)</span>로 조정되었더니, 방금 전보다 잘못 분류된 샘플의 수가 감소하였다. 그런데 여전히 잘못 분류된 샘플이 있다. 러닝 모델은 러닝 알고리즘에 의해 <span class="math">\(w_0\)</span>, <span class="math">\(w_1\)</span>, <span class="math">\(w_2\)</span>의 값을 다시 한 번 조정한다.</p>
-<p><img alt="X1-X2 그래프와 학습된 선형 모델" src="{filename}/images/{slug}/age-to-salary-with-learned-model-plot.png" /></p>
-<p><em>X1 - X2 그래프와 학습된 선형 모델</em></p>
+<p><img alt="X1-X2 그래프와 학습된 선형 모델" src="../../../../images/what-is-machine-learning/age-to-salary-with-learned-model-plot.png" /></p>
+<p><center><em>X1 - X2 그래프와 학습된 선형 모델</em></center></p>
 <p>이제 완벽하다! 빨대론에서 가지고 있는 11개 샘플의 고객 데이터를 모두 정확히 분류하는 선형 모델을 찾았다. 이를 함수 형태로 나타내면 다음과 같다:</p>
-<p><span class="math">\(f(x_1,x_2)=-50-x_1+2x_2\)</span></p>
+<div class="math">$$f(x_1,x_2)=-50-x_1+2x_2$$</div>
 <p>이제 이것이 무슨 의미를 가지는지 알아보겠다. 신규 고객 '김호구'씨가 있는데, 이 사람의 나이가 40세이고 연봉이 40백만원(=4천만원)이다. 이 사람은 과연 3개월 내로 채무를 이행할까? 아주 애매한데, 우리가 학습시킨 기계에게 물어보자.</p>
-<p><span class="math">\(f(40,40)=-50-40+2*40&lt;0\)</span></p>
-<p><img alt="김호구씨의 채무 이행여부 확인 결과" src="{filename}/images/{slug}/age-to-salary-classify-sample-plot.png" /></p>
-<p><em>김호구씨의 채무 이행여부 확인 결과</em></p>
+<div class="math">$$f(40,40)=-50-40+2*40&lt;0$$</div>
+<p><img alt="김호구씨의 채무 이행여부 확인 결과" src="../../../../images/what-is-machine-learning/age-to-salary-classify-sample-plot.png" /></p>
+<p><center><em>김호구씨의 채무 이행여부 확인 결과</em></center></p>
 <p>러닝 모델이 만들어낸 직선의 아랫쪽에 있으므로, 김호구씨는 'X'로 분류됨이 확인되었다. 즉, 김호구씨는 3개월 내로 채무를 이행할 수 없을 것이므로, 사전에 고강도의 조치를 취해야 함이 확인되었다.</p>
 <h4>예시1: 나무 여부 구별 기계 (revisited)</h4>
 <p>앞선 '3개월 내 채무 이행 여부 예측 기계'의 예시를 통해, 여러분은 러닝 모델이 무엇인지 어렴풋이 이해했을 것이다(솔직히 아마 대부분은 제대로 이해하지 못했을 것이다 - 필자가 볼 때는 원래 그게 정상이므로 괜찮다). 이제 첫 번째 예시였던 '나무 여부 구별 기계'에서 러닝 모델을 도입하여 학습을 어떻게 수행하는지 설명하는 데 조금 자신감이 붙게 되었다.</p>
 <p>나무 여부 구별 기계의 경우는 채무 이행 여부 예측 기계와 좀 다른 점이 있는 것이, 먼저 데이터를 기계가 이해할 수 있는 형태로 수치화시켜야 한다는 점이 그것이다. 채무 이행 여부 예측 기계의 경우, 애초부터 '나이'나 '연봉'처럼 이미 수치화된 정보를 사용했기 때문에 러닝 모델에 바로 때려넣는 데 전혀 무리가 없었다. 하지만 이미지의 경우 사람은 눈을 통해 받아들인 빛의 파장을 뇌 속에서 이리저리 정리하여 '어느 지점의 색상이 무엇인지' 등의 정보를 직관적으로 받아들이고 이해할 수 있지만, 기계는 그렇지 못하다.</p>
 <p>그래서 이미지의 경우, 다음과 같은 방법으로 데이터를 수치화시킨다. 먼저 주어진 이미지를 <a href="https://ko.wikipedia.org/wiki/%ED%99%94%EC%86%8C">픽셀(pixel, 이미지 상에서의 하나의 점)</a> 단위로 잘게 자른다. 그런 다음, 각 픽셀이 어떤 색상을 나타내는지를 <a href="https://ko.wikipedia.org/wiki/RGB_%EA%B0%80%EC%82%B0%ED%98%BC%ED%95%A9">RGB 가산혼합</a> 방식으로 나타낸다(픽셀과 RGB 가산혼합에 대해서 알고 싶으면, 각 단어에 링크를 달아 놓았으니 이를 읽으면 된다). 이미지의 특정 픽셀 위치를 '이미지 맨 위에서부터 X번째, 맨 왼쪽에서부터 Y번째' 식으로 생각하면 <span class="math">\((X, Y)\)</span>와 같이 좌표 형태로 나타낼 수 있을 것인데, 예를 들면 (53, 121)에 위치한 픽셀의 RGB 값은 [77, 140, 86]이 되는 식이다.</p>
-<p><img alt="나무 이미지의 (53, 121)에 위치한 픽셀의 RGB 값" src="{filename}/images/{slug}/isTree-classifier-pixels.png" /></p>
-<p><em>나무 이미지의 (53, 121)에 위치한 픽셀의 RGB 값</em></p>
+<p><img alt="나무 이미지의 (53, 121)에 위치한 픽셀의 RGB 값" src="../../../../images/what-is-machine-learning/isTree-classifier-pixels.png" /></p>
+<p><center><em>나무 이미지의 (53, 121)에 위치한 픽셀의 RGB 값</em></center></p>
 <p>이미지 하나에 포함된 픽셀은 총 몇 개일까? 위 그림에서 표시해 놓은 것만 아주 대충 세어도 150*100 = 15,000개 정도 된다. 이 15,000개 점 각각의 RGB 값을 아래와 같이 쭉 정리해 놓은 것을 데이터로 활용한다고 생각하면 된다.</p>
 <table>
 <thead>
 <tr>
-<th align="center">픽셀 번호 (X, Y)</th>
-<th align="center">R</th>
-<th align="center">G</th>
-<th align="center">B</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="center">1 (1,1)</td>
-<td align="center">255</td>
-<td align="center">255</td>
-<td align="center">255</td>
+<td><strong>픽셀 번호 (X, Y)</strong></td>
+<td><strong>R</strong></td>
+<td><strong>G</strong></td>
+<td><strong>B</strong></td>
 </tr>
 <tr>
-<td align="center">2 (2,1)</td>
-<td align="center">255</td>
-<td align="center">254</td>
-<td align="center">192</td>
+<td>1 (1,1)</td>
+<td>255</td>
+<td>255</td>
+<td>255</td>
 </tr>
 <tr>
-<td align="center">3 (3,1)</td>
-<td align="center">249</td>
-<td align="center">253</td>
-<td align="center">187</td>
+<td>2 (2,1)</td>
+<td>255</td>
+<td>254</td>
+<td>192</td>
 </tr>
 <tr>
-<td align="center">4 (4,1)</td>
-<td align="center">237</td>
-<td align="center">211</td>
-<td align="center">209</td>
+<td>3 (3,1)</td>
+<td>249</td>
+<td>253</td>
+<td>187</td>
 </tr>
 <tr>
-<td align="center">...</td>
-<td align="center">...</td>
-<td align="center">...</td>
-<td align="center">...</td>
+<td>4 (4,1)</td>
+<td>237</td>
+<td>211</td>
+<td>209</td>
 </tr>
 <tr>
-<td align="center">14997 (147,100)</td>
-<td align="center">97</td>
-<td align="center">0</td>
-<td align="center">35</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
 </tr>
 <tr>
-<td align="center">14998 (148,100)</td>
-<td align="center">27</td>
-<td align="center">188</td>
-<td align="center">70</td>
+<td>14997 (147,100)</td>
+<td>97</td>
+<td>0</td>
+<td>35</td>
 </tr>
 <tr>
-<td align="center">14999 (149,100)</td>
-<td align="center">64</td>
-<td align="center">192</td>
-<td align="center">66</td>
+<td>14998 (148,100)</td>
+<td>27</td>
+<td>188</td>
+<td>70</td>
 </tr>
 <tr>
-<td align="center">15000 (150,100)</td>
-<td align="center">0</td>
-<td align="center">0</td>
-<td align="center">1</td>
+<td>14999 (149,100)</td>
+<td>64</td>
+<td>192</td>
+<td>66</td>
+</tr>
+<tr>
+<td>15000 (150,100)</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
 </tr>
 </tbody>
 </table>
-<p><em>나무 이미지 샘플 하나의 수치화된 데이터</em></p>
+<p><center><em>나무 이미지 샘플 하나의 수치화된 데이터</em></center></p>
 <p>나무 여부 구별 기계를 학습하기 위해 러닝 모델은 뭘 써야 할까? 우리가 아는 것은 선형 모델밖에 없으니 그걸 써 보자. 입력 변수가 총 몇 개일까? 명심할 것은, 위 표에 나타낸 것이 샘플 하나의 데이터라는 것이다! 샘플 하나에 [R, G, B]값의 조합이 총 15,000개 있으므로, 단순 계산으로 하면 총 3*15,000 = 45,000 개의 입력 변수가 필요하다!</p>
-<p><span class="math">\(f(x_1,x_2,...,x_{45000})=w_0+w_1x_1+w_2x_2+...+w_{45000}x_{45000}\)</span></p>
+<div class="math">$$f(x_1,x_2,...,x_{45000})=w_0+w_1x_1+w_2x_2+...+w_{45000}x_{45000}$$</div>
 <p>우선, 입력 변수가 45,000개인 함수의 경우, 3차원을 넘어가버리기 때문에 앞에서처럼 평면 혹은 공간 상에서 표현할 수가 없어서 사람이 이해하기가 어렵다. 뿐만 아니라, 조정해야 할 계수들이 무려 45,001개로 너무 많기 때문에, 러닝 알고리즘에 의해 학습하는 데도 엄청나게 오랜 시간이 걸리거나, 아예 학습 자체가 불가능할 수도 있다.</p>
 <h5>나무 여부 구별을 위한 첫 번째 시도: 새로운 요인 정의</h5>
 <p>그래서 보통 맨 첫번째로, 러닝 모델의 입력 변수의 갯수를 줄이고자 하는 시도를 한다. 예를 들어, 한 샘플 내 15,000개 픽셀들의 [R, G, B] 값 각각에 대하여 평균값을 사용하면 어떨까? 이렇게 하면, 픽셀의 위치와는 무관하게 다음과 같이 [R, G, B] 조합 한 개만이 얻어질 것이다.</p>
 <table>
 <thead>
 <tr>
-<th align="center">픽셀 번호 (X, Y)</th>
-<th align="center">R의 평균</th>
-<th align="center">G의 평균</th>
-<th align="center">B의 평균</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="center">N/A</td>
-<td align="center">192.34</td>
-<td align="center">34.56</td>
-<td align="center">11.67</td>
+<td><strong>픽셀 번호 (X, Y)</strong></td>
+<td><strong>R의 평균</strong></td>
+<td><strong>G의 평균</strong></td>
+<td><strong>B의 평균</strong></td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>192.34</td>
+<td>34.56</td>
+<td>11.67</td>
 </tr>
 </tbody>
 </table>
-<p><em>'RGB 평균값' 요인에 기반한 나무 이미지 하나의 데이터</em></p>
+<p><center><em>'RGB 평균값' 요인에 기반한 나무 이미지 하나의 데이터</em></center></p>
 <p>이렇게 원 데이터에서 'R의 평균', 'G의 평균', 'B의 평균'과 같이 데이터를 설명하는 새로운 항목들을 정의하여 위와 같이 새로운 데이터를 생성함으로써 필요한 입력 변수의 갯수를 감소시키는 것은 머신러닝에서 매우 일반적인데, 이 때의 항목을 '<strong>요인(feature)</strong>'이라고 부른다. 이렇게 새로 생성된 'R의 평균', 'G의 평균', 'B의 평균'이라는 요인에 기반한 데이터를 선형 모델에 주고 학습시키고자 할 경우, 단 3개의 입력 변수를 가지는 선형 모델을 활용할 수 있으며, 단 4개의 계수만을 조정하면 된다.</p>
-<p><span class="math">\(f(x_1,x_2,x_3)=w_0+w_1x_1+w_2x_2+w_3x_3\)</span></p>
+<div class="math">$$f(x_1,x_2,x_3)=w_0+w_1x_1+w_2x_2+w_3x_3$$</div>
 <p>그런데, 조금만 생각해보면 위에서 새로 정의한 요인들은 설령 입력 변수의 갯수를 줄여줄 지언정, 원래의 목표인 '나무 여부 구별' 측면에서 생각해보면 쓰레기 값에 가깝다. 전체 이미지를 지배하는 평균 색상이 무엇인지를 구했을 뿐 평균을 구하는 과정에서 이미지 상의 '어느 지점의 색상이 무엇인지'의 정보가 다 사라져버렸는데, 이걸 어디다 쓴단 말인가? 사람조차도 이 정보만으로는 나무 여부를 구별할 수가 없다.</p>
-<p><img alt="나무 이미지 전체의 평균 색상" src="{filename}/images/{slug}/isTree-classifier-failed-features.png" /></p>
+<p><img alt="나무 이미지 전체의 평균 색상" src="../../../../images/what-is-machine-learning/isTree-classifier-failed-features.png" /></p>
 <p>나무 이미지 전체의 평균 색상</p>
 <p>그것보다, 이런 요인은 어떨까? 주어진 이미지를 수평 방향으로 반으로 갈라, 윗쪽 절반의 정중앙에 해당하는 픽셀을 선택하여 해당 픽셀의 [R, G, B] 값과, 아랫쪽 절반의 정중앙 픽셀을 선택하여 해당 픽셀의 [R, G, B] 값을 각각 요인으로 정의하는 것이다. 즉, '윗쪽 절반 중앙의 {R, G, B}값', '아랫쪽 절반 중앙의 {R, G, B}값'으로 총 6개의 요인을 정의할 수 있다. 데이터는 아마 이런 식일 것이다.</p>
 <table>
 <thead>
 <tr>
-<th align="center">픽셀</th>
-<th align="center">R</th>
-<th align="center">G</th>
-<th align="center">B</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="center">윗쪽 중앙</td>
-<td align="center">77</td>
-<td align="center">215</td>
-<td align="center">86</td>
+<td><strong>픽셀</strong></td>
+<td><strong>R</strong></td>
+<td><strong>G</strong></td>
+<td><strong>B</strong></td>
 </tr>
 <tr>
-<td align="center">아랫쪽 중앙</td>
-<td align="center">49</td>
-<td align="center">55</td>
-<td align="center">33</td>
+<td>윗쪽 중앙</td>
+<td>77</td>
+<td>215</td>
+<td>86</td>
+</tr>
+<tr>
+<td>아랫쪽 중앙</td>
+<td>49</td>
+<td>55</td>
+<td>33</td>
 </tr>
 </tbody>
 </table>
-<p><em>'윗쪽 중앙, 아랫쪽 중앙 픽셀의 RGB 값' 요인에 기반한 나무 이미지 하나의 데이터</em></p>
+<p><center><em>'윗쪽 중앙, 아랫쪽 중앙 픽셀의 RGB 값' 요인에 기반한 나무 이미지 하나의 데이터</em></center></p>
 <p>이렇게 하면 총 6개의 입력 변수를 가지는 선형 모델을 활용하여 7개의 계수를 조정하면 된다.</p>
-<p><span class="math">\(f(x_1,x_2,...,x_6)=w_0+w_1x_1+w_2x_2+...+w_6x_6\)</span></p>
+<div class="math">$$f(x_1,x_2,...,x_6)=w_0+w_1x_1+w_2x_2+...+w_6x_6$$</div>
 <p>필자가 막 지어낸 허접하기 그지없는 요인이지만, 적어도 필자 생각에는 앞선 '평균' 관련 요인보다는 이게 더 나을 것 같다. 일반적인 나무 이미지를 생각해보면, 윗쪽 중앙에는 무성한 잎사귀가 위치해 있고, 아랫쪽 중앙에는 줄기가 위치해 있지 않는가? 이 때문에 나무 이미지의 경우 윗쪽 중앙의 [R, G, B] 값이 녹색의 그것에 가까울 것이고, 아랫쪽 중앙의 [R, G, B] 값은 갈색의 그것에 가까울 것이다. 러닝 모델은 6개의 입력 변수로부터 이러한 경향을 받아들인 뒤, 이러한 특성을 잘 설명할 수 있는 방향으로 계수를 조절할 것으로 기대할 수 있다.</p>
-<p><img alt="나무 이미지 윗쪽 절반 중앙 픽셀 색상, 아랫쪽 절반 중앙 픽셀 색상" src="{filename}/images/{slug}/isTree-classifier-successful-features.png" /></p>
-<p><em>나무 이미지 윗쪽 절반 중앙 픽셀 색상, 아랫쪽 절반 중앙 픽셀 색상</em></p>
+<p><img alt="나무 이미지 윗쪽 절반 중앙 픽셀 색상, 아랫쪽 절반 중앙 픽셀 색상" src="../../../../images/what-is-machine-learning/isTree-classifier-successful-features.png" /></p>
+<p><center><em>나무 이미지 윗쪽 절반 중앙 픽셀 색상, 아랫쪽 절반 중앙 픽셀 색상</em></center></p>
 <p>여기에서 하고 싶은 말은, 머신러닝에서 성공적인 학습을 위해서는 효과적인 요인을 아주 잘 정의하는 것이 대단히 중요한데, 이것은 해당 분야에 대한 풍부한 지식과 뛰어난 직관에 힘입은, 예술에 가까운 작업이라는 것이다. 실제로 '나무 여부 구별'이나 '채무 이행여부 예측' 따위의 문제에 있어서, "어떤 요인을 정의해서 기계를 학습시켰더니 성능이 월등하게 잘 나왔더라"와 같은 내용은 연구가 하나의 논문거리가 되는 경우도 허다하다.</p>
 <h5>나무 여부 구별을 위한 두 번째 시도: 선형 모델 외의 다른 러닝 모델 사용</h5>
 <p>'나무 여부 구별 기계' 예시에서 다루는 문제를 일반적으로 <strong>이미지 인식(image recognition)</strong>이라고 부르는데, 사실 이미지 인식 분야에서는 선형 모델을 쓰지 않는다. 선형 모델은 가장 단순하고 (학습이 된다는 전제 하에서)학습 속도가 빠르며 인간이 이해하기 쉬운 대신, 원 데이터 자체가 수많은 픽셀로 이루어져 있는 이미지와 같은 데이터의 경우에는 해당 데이터의 복잡성을 모델에 충분히 반영하는 것이 불가능하다. 반면 예시2에서와 같이 애초에 원 데이터 자체가 '나이', '연봉' 등 어느 정도 감당할 수 있는 요인으로 구성되어 있는 경우 선형 모델을 충분히 적용해볼 만하다.</p>
@@ -460,7 +484,7 @@ styles, `#sidebar-checkbox` for behavior. -->
             })(document);
       </script>
      </div>
-  <script src="/theme/js/instantclick.min.js" data-no-instant></script>
+  <script src="../../../../theme/js/instantclick.min.js" data-no-instant></script>
   <script data-no-instant>InstantClick.init();</script>
   </body>
 </html>

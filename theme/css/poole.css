@@ -88,17 +88,22 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility;
 }
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 h2 {
-  margin-top: 1rem;
-  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  font-size: 2rem;
 }
 h3 {
-  margin-top: 1.5rem;
-  font-size: 1.25rem;
+  margin-top: 2rem;
+  font-size: 1.5rem;
 }
-h4, h5, h6 {
+h4 {
+  margin-top: 1.25rem;
+  font-size: 1rem;
+}
+
+h5, h6 {
   margin-top: 1rem;
   font-size: 1rem;
 }
@@ -229,22 +234,28 @@ blockquote p:last-child {
 
 img {
   display: block;
-  max-width: 100%;
+  max-width: 80%;
   margin: 0 0 1rem;
   border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Tables */
 table {
   margin-bottom: 1rem;
-  width: 100%;
+  max-width: 100%;
   border: 1px solid #e5e5e5;
   border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
 }
 td,
 th {
   padding: .25rem .5rem;
   border: 1px solid #e5e5e5;
+  text-align: center;
+  /* white-space: nowrap; */
 }
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
